@@ -26,7 +26,7 @@ namespace FileAnalyzer.Tests
         {
             // Arrange
             //var data = new Data(@"data_empty.txt");
-            var data = new DataAnalizer("C:\\Users\\edgar\\source\\repos\\Edi1012\\FileAnalyzer\\FileAnalyzer.Test\\data_empty.txt");
+            var data = new DataAnalizer("C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\DataEmpty.txt");
             var validator = new DataFileAnalizerValidator();
 
             // Act
@@ -35,14 +35,14 @@ namespace FileAnalyzer.Tests
             // Assert
             result.IsValid.Should().BeFalse();
             result.Errors.Should().HaveCount(1);
-            result.Errors[0].ErrorMessage.Should().Be("The array cannot be empty");
+            result.Errors[0].ErrorMessage.Should().Be("File is empty");
         }
 
         [Fact]
         public void Validate_WithNonIntegerStringData_ShouldHaveErrorForStringData()
         {
             // Arrange
-            var data = new DataAnalizer("C:\\Users\\edgar\\source\\repos\\Edi1012\\FileAnalyzer\\FileAnalyzer.Test\\data_invalid.txt");
+            var data = new DataAnalizer("C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\DataInvalid.txt");
             var validator = new DataFileAnalizerValidator();
 
             // Act
@@ -59,7 +59,7 @@ namespace FileAnalyzer.Tests
         public void Print_WithValidData_WritesExpectedOutput()
         {
             // Arrange
-            var data = new DataAnalizer("C:\\Users\\edgar\\source\\repos\\Edi1012\\FileAnalyzer\\FileAnalyzer.Test\\data_valid.txt");
+            var data = new DataAnalizer("C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\Data.txt");
             var expectedOutput = "Total integers: 4\r\n" +
                                  "Sum: 25\r\n" +
                                  "Average: 6.25\r\n" +
