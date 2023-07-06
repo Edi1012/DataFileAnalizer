@@ -9,6 +9,7 @@ try
                         .ConfigureServices(services => 
                         { 
                             services.AddSingleton<Application>();
+                            services.AddSingleton<DataFileAnalizerValidator>();
                         })
                         .Build();
 
