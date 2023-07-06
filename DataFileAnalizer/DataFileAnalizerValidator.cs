@@ -10,7 +10,7 @@ public class DataFileAnalizerValidator : AbstractValidator<DataAnalizer>
 
         RuleFor(x => x.path)
             .Must(File.Exists)
-            .WithMessage("File not exists");
+            .WithMessage("The file does not exist");
 
         RuleForEach(x => x.stringArray)
             .Must(x => int.TryParse(x, out _))
