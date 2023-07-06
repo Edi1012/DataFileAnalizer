@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFileAnalizer", "DataFileAnalizer\DataFileAnalizer.csproj", "{58DA0922-8A98-4808-AA3D-6D943A98F387}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFileAnalizer.Test", "DataFileAnalizer.Test\DataFileAnalizer.Test.csproj", "{F2B59666-CDE0-4279-8EAF-D8E3042E9E74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{58DA0922-8A98-4808-AA3D-6D943A98F387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58DA0922-8A98-4808-AA3D-6D943A98F387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58DA0922-8A98-4808-AA3D-6D943A98F387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B59666-CDE0-4279-8EAF-D8E3042E9E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B59666-CDE0-4279-8EAF-D8E3042E9E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B59666-CDE0-4279-8EAF-D8E3042E9E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B59666-CDE0-4279-8EAF-D8E3042E9E74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
