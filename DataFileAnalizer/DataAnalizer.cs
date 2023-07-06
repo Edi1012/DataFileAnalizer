@@ -18,11 +18,11 @@ public class DataAnalizer
 
         intArray = stringArray.Select(x => int.Parse(x)).ToArray();
 
-        Console.WriteLine("Total integers:" + intArray.Length);
-        Console.WriteLine("Sum:" + intArray.Sum());
-        Console.WriteLine("Average:" + intArray.Average());
-        Console.WriteLine("Minimum:" + intArray.Min());
-        Console.WriteLine("Minimum:" + intArray.Max());
+        Console.WriteLine("Total integers: "    + intArray.Length);
+        Console.WriteLine("Sum: "               + intArray.Sum());
+        Console.WriteLine("Average: " + intArray.Average());
+        Console.WriteLine("Maximum: " + intArray.Max());
+        Console.WriteLine("Minimum: " + intArray.Min()); 
     }
 
 
