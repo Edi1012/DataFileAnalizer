@@ -13,7 +13,7 @@ public class Application
     {
         try
         {
-            var DataAnalizer = new DataAnalizer("C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\DataFileAnalizer\\Dataa.txt");
+            var DataAnalizer = new DataAnalizer("C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\Data.txt");
             var validation = ValidationRules.Validate(DataAnalizer);
 
             if(validation.IsValid == false) 
@@ -24,6 +24,8 @@ public class Application
             }
 
             DataAnalizer.PrintResults();
+            Console.ReadLine();
+            return;
         }
         catch (Exception ex) 
         {
