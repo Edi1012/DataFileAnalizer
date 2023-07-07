@@ -46,7 +46,7 @@ Replace `"C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\"` with th
 
 To set the environment variable in the tests, follow these steps:
 
-1. Open the `DataFileValidatorTest.cs` file located at `C:\Users\edgar\source\repos\Edi1012\DataFileAnalizer\DataFileAnalizer.Test\DataFileValidatorTest.cs`.
+1. Open the `DataFileValidatorTest.cs` file located at `...\DataFileAnalizer\DataFileAnalizer.Test\DataFileValidatorTest.cs`.
 2. Find the line where the environment variable is set, which should be at line 12.
 3. Update the line to set the `DATA_FILE_PATH` environment variable as follows:
 
