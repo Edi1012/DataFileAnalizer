@@ -25,6 +25,37 @@ operations:
 5. To set the environment variable, open the Program.cs file in your project and add the following code snippet before the CreateHostBuilder method:
    Replace "C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\" with the desired file path.
 
+## Environment Variable Configuration
+
+The project can be configured using environment variables. Follow the instructions below to set the environment variable for the main application and the tests:
+
+### Configuration in the Main Application
+
+To set the environment variable in the main application, follow these steps:
+
+1. Open the `Program.cs` file located in the project root.
+2. Before the `CreateHostBuilder` method, add the following code:
+
+```csharp
+Environment.SetEnvironmentVariable("DATA_FILE_PATH", "C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\");
+```
+
+Replace `"C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\"` with the desired file path.
+
+### Configuration in Tests
+
+To set the environment variable in the tests, follow these steps:
+
+1. Open the `DataFileValidatorTest.cs` file located at `C:\Users\edgar\source\repos\Edi1012\DataFileAnalizer\DataFileAnalizer.Test\DataFileValidatorTest.cs`.
+2. Find the line where the environment variable is set, which should be at line 12.
+3. Update the line to set the `DATA_FILE_PATH` environment variable as follows:
+
+```csharp
+Environment.SetEnvironmentVariable("DATA_FILE_PATH", "C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\");
+```
+
+Replace `"C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\"` with the desired file path.
+
 
 ## Contact
 
