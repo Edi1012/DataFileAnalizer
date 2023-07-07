@@ -22,6 +22,9 @@ operations:
 2. Open the project in your preferred development environment.
 3. Restore the required NuGet packages.
 4. Build the project.
+5. To set the environment variable, open the Program.cs file in your project and add the following code snippet before the CreateHostBuilder method:
+   Replace "C:\\Users\\edgar\\source\\repos\\Edi1012\\DataFileAnalizer\\" with the desired file path.
+
 
 ## Contact
 
